@@ -9,7 +9,7 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 }
-
+/* ***** GENERAL ***** */
 body {
   color: var(--primary-text-color);
   font-family: var(--main-font);
@@ -22,7 +22,81 @@ body {
   text-decoration: none;
 }
 
+ul,
+ol {
+padding-left: 0;
+margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ***** END GENERAL ***** */
+
+/* ******* COMPONENTS ******* */
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ******* END COMPONENTS ******* */
+
 /* *********** HEADER *********** */
+.header .container {
+  display: flex;
+}
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.site-nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.main-nav,
+.auth-list {
+  display: flex;
+  align-items: center;
+}
+
 .main-nav-link,
 .auth-list-link {
   font-size: 14px;
@@ -49,6 +123,11 @@ body {
 .current {
   color: var(--accent-color);
 }
+
+.main-nav-item:not(:last-child),
+.auth-list-item:not(:last-child) {
+  margin-right: 50px;
+}
 /* ********** END HEADER ********** */
 
 /* *********** LOGO *********** */
@@ -61,6 +140,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+ .logo {
+   margin-right: 95px;
+   }
 
 .logo span,
 .logo-white span {
@@ -86,8 +168,13 @@ body {
   line-height: 1.86;
   letter-spacing: 0.06em;
   font-weight: 700;
+  min-width: 200px;
+  min-height: 50px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  margin: 0 auto;
+  display: block;
+  padding: 10px 32px;
 }
 
 .btn-filter {
@@ -108,7 +195,10 @@ body {
 /* *********** HERO *********** */
 .hero-section {
   background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 
 .hero-section-title {
   text-align: center;
@@ -118,10 +208,24 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 /* *********** END HERO *********** */
 
 /* *********** FEATURES *********** */
+.features {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.features-list {
+display: flex;
+}
+
+.features-list-item:not(:last-child){
+  margin-right: 30px;
+}
+
 .features-list-title {
   font-size: 14px;
   line-height: 1.14;
@@ -138,49 +242,53 @@ body {
 }
 /* *********** END FEATURES *********** */
 
-/* ******* COMPONENTS ******* */
-.section-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+/* *********** ACTIVITY *********** */
+.activity {
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.activities-list {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* ******* END COMPONENTS ******* */
+/* *********** END ACTIVITY *********** */
 
 /* ********** TEAM ********** */
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--background-grey-color);
+}
+.photo-signature {
+  background-color: var(--primary-white-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 270px;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-member-occupation {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
 
-.our-team {
-  background-color: var(--background-grey-color);
-}
 /* ********** END TEAM ********** */
 
 /* ********* PORTFOLIO ********** */
