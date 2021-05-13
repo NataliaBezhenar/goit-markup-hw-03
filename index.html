@@ -9,14 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" 
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" 
+    crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <title>Студия</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
-      <a class="logo link" href="./index.html"><span>Web</span>Studio</a>
-      <nav>
+      <div class="container">
+      <nav class="site-nav">
+        <a class="logo link" href="./index.html"><span>Web</span>Studio</a>
         <ul class="main-nav list">
           <li class="main-nav-item">
             <a class="main-nav-link link current" href="./index.html">Студия</a>
@@ -41,17 +45,21 @@
           >
         </li>
       </ul>
+    </div>
     </header>
     <main>
       <!-- HERO SECTION -->
       <section class="hero-section">
+        <div class="container">
         <h1 class="hero-section-title">
           Эффективные решения<br />для вашего бизнеса
         </h1>
         <button type="button" class="btn btn-hero">Заказать услугу</button>
+      </div>
       </section>
       <!-- FEATURES SECTION -->
-      <section class="section">
+      <section class="section features">
+        <div class="container">
         <h2 class="section-title visually-hidden">Особенности</h2>
         <ul class="features-list list">
           <li class="features-list-item">
@@ -83,9 +91,11 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- ACTIVITY SECION -->
-      <section class="section">
+      <section class="section activity">
+        <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="activities-list list">
           <li>
@@ -113,56 +123,68 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!-- OUR TEAM SECTION -->
       <section class="section our-team">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list list">
-          <li>
+          <li class="team-list-item">
             <img
               width="270"
               height="260"
               src="./images/team_member1.jpg"
               alt="Product Designer Игорь Демьяненко"
             />
+            <div class="photo-signature">
             <h3 class="team-member-name">Игорь Демьяненко</h3>
             <p lang="en" class="team-member-occupation">Product Designer</p>
+            </div>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
               width="270"
               height="260"
               src="./images/team_member2.jpg"
               alt="Frontend Developer Ольга Репина"
             />
+            <div class="photo-signature">
             <h3 class="team-member-name">Ольга Репина</h3>
             <p lang="en" class="team-member-occupation">Frontend Developer</p>
+            </div>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
               width="270"
               height="260"
               src="./images/team_member3.jpg"
               alt="Marketing Николай Тарасов"
             />
+            <div class="photo-signature">
             <h3 class="team-member-name">Николай Тарасов</h3>
             <p lang="en" class="team-member-occupation">Marketing</p>
+            </div>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
               width="270"
               height="260"
               src="./images/team_member4.jpg"
               alt="UI Designer Михаил Ермаков"
             />
+            <div class="photo-signature">
             <h3 class="team-member-name">Михаил Ермаков</h3>
             <p lang="en" class="team-member-occupation">UI Designer</p>
+            </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="logo-white link"><span>Web</span>Studio</a>
       <address class="address">
         <p class="studio-location">г. Киев, пр-т Леси Украинки, 26</p>
@@ -179,6 +201,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
