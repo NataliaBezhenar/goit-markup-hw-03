@@ -269,6 +269,7 @@ img {
 .our-team {
   background-color: var(--background-grey-color);
 }
+
 .photo-signature {
   background-color: var(--primary-white-color);
   padding-top: 30px;
@@ -304,7 +305,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
-
 /* ********** END TEAM ********** */
 
 /* ********* PORTFOLIO ********** */
