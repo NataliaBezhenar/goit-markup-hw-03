@@ -84,7 +84,7 @@ img {
 }
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .site-nav {
@@ -227,6 +227,10 @@ img {
 
 .features-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-list-item {
+  width: 270px;
 }
 
 .features-list-title {
