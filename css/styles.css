@@ -46,7 +46,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 94px 15px;
+  padding: 0 15px;
 }
 
 /* ***** END GENERAL ***** */
@@ -79,12 +79,12 @@ img {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .site-nav {
@@ -199,11 +199,6 @@ img {
   padding-bottom: 200px;
 }
 
-.hero-section .container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .hero-section-title {
   text-align: center;
   color: var(--primary-white-color);
@@ -217,7 +212,8 @@ img {
 /* *********** END HERO *********** */
 
 /* *********** FEATURES *********** */
-.features .container {
+.features {
+  padding-top: 94px;
   padding-bottom: 47px;
 }
 
@@ -251,28 +247,32 @@ img {
 /* *********** END FEATURES *********** */
 
 /* *********** ACTIVITY *********** */
-.activity .container {
+.activity {
   padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .activities-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 .activity-list-item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 /* *********** END ACTIVITY *********** */
 
 /* ********** TEAM ********** */
 .our-team {
   background-color: var(--background-grey-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .photo-signature {
   background-color: var(--primary-white-color);
   padding-top: 30px;
@@ -285,13 +285,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 .team-list-item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .team-member-name {
@@ -312,6 +312,12 @@ img {
 /* ********** END TEAM ********** */
 
 /* ********* PORTFOLIO ********** */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .filter-btns-list {
   display: flex;
   justify-content: center;
@@ -359,9 +365,6 @@ img {
 /* ********* FOOTER ********** */
 .footer {
   background-color: var(--hero-background-color);
-}
-
-.footer .container {
   padding-bottom: 60px;
   padding-top: 60px;
 }
